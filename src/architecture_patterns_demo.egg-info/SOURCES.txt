@@ -1,0 +1,6 @@
+setup.py
+src/architecture_patterns_demo.egg-info/PKG-INFO
+src/architecture_patterns_demo.egg-info/SOURCES.txt
+src/architecture_patterns_demo.egg-info/dependency_links.txt
+src/architecture_patterns_demo.egg-info/requires.txt
+src/architecture_patterns_demo.egg-info/top_level.txt
