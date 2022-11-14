@@ -12,11 +12,14 @@ class OrderedLine:
 
 @dataclass
 class Batch:
-
-    refId: str
-    SKU: str
-    capability: int
-    eta: Optional[date]
+    def __init__(self, ref_id, sku, capability, eta):
+        self.ref_id = ref_id
+        self.sku = sku
+        self.capability = capability
+        self.eta = eta
 
     def allocate(self, order_line: OrderedLine):
         self.capability -= order_line.qty
+
+    def deallocated(self, unallocated_line):
+        pass
